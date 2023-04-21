@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- lang es para decir el idioma de la web -->
+
+  <head>
+    <title>AppDeGatos</title>
+  </head>
+
+  <!-- contiene la metadata los elementos que no vemos, tambien para personalizar el titulo de la pagina con title -->
+
+  <body>
+    <h2>AppDeGatos</h2>
+
+    <!-- h1 h2 h3 h4 h5 h6 son encabezados -->
+
+    <main>
+      <h3>Imagenes de Gatos</h3>
+      <!-- TODO: Agregar enlace a imagenes de gatos-->
+      <p>
+        Haz click aquí para ver
+        <a
+          href="https://www.freecodecamp.org/espanol/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >más imagenes de gatos.</a
+        >
+      </p>
+
+      <!-- <a href="#parrafo-1">Párrafo 1</a>
+      <a href="#parrafo-2">Párrafo 2</a>
+      <a href="#">Párrafo 3</a>
+      <a href="#">Párrafo 4</a> -->
+
+      <a
+        href="https://www.freecodecamp.org/espanol/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          src="https://bit.ly/fcc-relaxing-cat"
+          alt="Un lindo gato naranja recostado sobre su espalda"
+      /></a>
+
+      <hr />
+
+      <!-- hr linea horizontal no necesita cierre -->
+
+      <!-- con la <a> se crea un hipervinculo para que se convierta en mano. href web donde está ubicado. target blank abre una nueva pestaña y rel noopener noreferrer son motivos de seguridad del navegador -->
+
+      <!--En la imagen src se seleciona la ubicacion donde está. alt es el texto que sale cuando no hay conexion y no puede cargar la pagina. -->
+
+      <h3>Listas de gatos</h3>
+      <div>
+        <!-- Es un contenedor de información para usar en css -->
+
+        <p>Cosas que los gatos <em>aman</em>:</p>
+
+        <!-- em se utiliza para poner en cursiva -->
+
+        <ul>
+          <li>Menta gatuna</li>
+          <!-- list item -->
+          <li>Apuntadores laser</li>
+          <li><s>Lasaña</s></li>
+          <li>Arañar</li>
+        </ul>
+
+        <!-- ul  listas no ordenadas -->
+        <!-- s palabras tachadas -->
+
+        <img src="imagenes/lasana.jpg" alt="lasaña" />
+        <p>Cosas que los gatos <strong> odian</strong>:</p>
+
+        <!-- strong es para poner algo negrita, para texto importante -->
+
+        <ol>
+          <li>Tratamientos antipulgas</li>
+          <!-- list item -->
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+      </div>
+      <img src="imagenes/gatos.jpg" alt="gatos" />
+
+      <!-- ol lista ordenada -->
+
+      <form action="/enviar-respuesta">
+        <!--Botones de radio  -->
+        <label for="interior">
+          <input
+            id="interior"
+            type="radio"
+            value="interior"
+            name="interior-exterior"
+            checked
+          />Interior</label
+        ><br />
+        <!-- br es un salto de linea -->
+        <!-- value es el valor que le devuelve el servidor??? -->
+
+        <label for="exterior">
+          <input
+            id="exterior"
+            type="radio"
+            value="exterior"
+            name="interior-exterior"
+          />Exterior</label
+        ><br />
+        <!-- se le pone un punto para seleccionar -->
+        <!-- label hace que se puede marcar pulsando en el texto -->
+        <!-- for y id es para que se vinculen el for de la etiqueta con identidad del input -->
+        <!-- name hace que haya un grupo de radios en los que solo se puede elegir uno de ellos -->
+
+        <!-- Casillas de verificación -->
+        <label for="carinoso"
+          ><input
+            id="carinoso"
+            type="checkbox"
+            value="carinoso"
+            name="personalidad"
+            checked
+          />Cariñoso</label
+        >
+        <label for="perezoso"
+          ><input
+            id="perezoso"
+            type="checkbox"
+            value="perezoso"
+            name="personalidad"
+          />Perezoso</label
+        >
+        <label for="energico"
+          ><input
+            id="energico"
+            type="checkbox"
+            value="energico"
+            name="personalidad"
+          />Enérgico</label
+        >
+
+        <!-- checkbox son casillas de verificación para marcar con un tick -->
+        <!-- checked es para que cuando abra la pagina tenga ya una opcion selecciona predeterminada -->
+        <!-- Texto y Boton Enviar -->
+        <input
+          type="text"
+          placeholder="URL de la foto de tu gato"
+          required
+        /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- form es un formulario 
+      input es para que el usuario introduzca algo ejemplo text texto submit boton
+      action es la direccion del archivo en el servidor-->
+      <!-- placeholder explicacion dentro del cuadro de texto, pero cuando vas a escribir desaparece 
+      required es para que en el cuadro de texto no se quede vacio-->
+
+      <!-- <h3 id="parrafo-1">Párrafo 1</h3>
+        
+      <p class="red-text">
+        Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching
+        attack your ankles chase the red dot, hairball run catnip eat the grass
+        sniff.
+      </p>
+
+      <h3 id="parrafo-2">Párrafo 2</h3>
+
+      <p>
+        Purr jum eat the grass rip the couch scratched sumbathe, shed everywhere
+        rip the couch sleep in the sink fluffy fur canip scratched.
+      </p>  -->
+    </main>
+    <footer>
+      <p>
+        <small>
+          <!-- small es una propiedad para hacer la letra más pequeña -->
+          Sin Derechos de Autor -
+          <a href="https://www.freecodecamp.org/espanol/">
+            freeCodecamp.org</a
+          ></small
+        >
+      </p>
+    </footer>
+
+    <!-- footer es un pie de pagina y se pone justo despues del main -->
+  </body>
+</html>
