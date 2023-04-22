@@ -1,0 +1,42 @@
+.texto-azul {
+  color: blue;
+}
+
+.texto-morado {
+  color: purple;
+}
+
+/* cuando dentro de una clase en .html se asigna dos atributos se visualizara en el navegador la que esté descrita en ultimo lugar en .css */
+
+a {
+  text-decoration: purple wavy underline;
+}
+
+/* se le asigna una letra morada underline(subrayado) wavy(ondulada) */
+
+.sin-subrayado {
+  text-decoration: none;
+}
+
+/* en este caso prioriza la ultima linea que está escrita en .css. Pero en este caso si cambiamos el orden sigue teniendo efecto no tener subrayado porque la clase está dentro del hipervinculo entonces html ejecuta primero el hipervinculo adquiere las propiedades y despues ejecuta la clase y le asigna las propiedades */
+
+#titulo {
+  color: purple !important;
+}
+
+/* cuando al lado de la propiedad se pone !important le estamos diciendo que esa propiedad es la que mas prioridad tiene aunque no le corresponda */
+
+/* tiene prioridad siempre id sobre la class */
+
+/* la prioridad es la siguiente
+style 
+id
+class
+elemento */
+
+#enlace-principal {
+  color: green;
+  text-decoration: green wavy underline;
+}
+
+/* style es quien mas prioridad tiene */
