@@ -139,3 +139,8 @@ a[href="https://www.freecodecamp.org/espanol/"]
 }
 
 /* Busca en todos los hipervinculo que hay en html y comprueba todos los que tienen establecida la web de freecodecamp le asigna los atributos de color verde y le quita cualquier decoracion como el subrayado que traia por defecto y se pone el texto en negrita*/
+body {
+  background-color: gold;
+}
+
+/* Aquí se configura el body o el cuerpo que seria el fondo de todos los elementos */
