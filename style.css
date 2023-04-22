@@ -1,0 +1,141 @@
+/* Selectores de tipo
+
+h2 {
+  color: blue;
+}
+
+h3 {
+  color: green;
+}
+
+p {
+  color: purple;
+}  */
+
+/* Selectores de clase */
+
+/* .lista-de-gatos {
+  color: chocolate;
+} */
+/* En html se crea una clase con class="lista-de-gatos" para que cambie las propiedades. En css se le llama a la propiedad con .lista-de-gatos y se le asigna la propiedad en este caso el color entre {} */
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 25px;
+}
+/* Cambia el tamaño de la letra con font-size */
+
+p,
+ul,
+ol {
+  font-size: 20px;
+}
+/* Se le asigna la misma propiedad a distinto tipos  */
+
+/* li {
+  color: blue;
+  font-size: 15px;
+} */
+/* Se le puede asignar varias propiedades al mismo tipo */
+
+h2 {
+  font-family: 'Rubik Pixels', cursive;
+  font-family: 50px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+/* Se asigna el tipo de fuente, puedes elegir varias por si alguna falla. Si tiene varias palabras se pone "". Para comprobar la letra se ejecuta index se inspecciona, en la ventana computed al final se ve el tipo de fuente que utiliza el navegador por si falla */
+
+/* img {
+  width: 200px;
+} */
+/* Todas las imagenes se convierten en el mismo tamaño */
+
+.imagen-de-gatos {
+  width: 200px;
+  border-width: 5px;
+  border-color: blue;
+  border-style: solid dashed dotted double;
+}
+/* se realiza el tamaño de las fotos solo a las que tienen la clase .imagen-de-gatos */
+
+/* border-width es para poner el tamaño del borde
+border-color para poner el color
+border-style es para el estilo puede solid(encuadrado), none (sin borde), dotted(punteado), dashed(a rayitas), double(doble borde), groove(surco) ridge(cresta) inset y outset. Se pueden poner las cuatro esquinas */
+
+.bordes-redondeados {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* Con border-radius hace que la imagen tenga los bordes redondeados. Se puede poner con pixel o %, normalmente con 50% se hace la imagen circular. */
+.contenedor-listas {
+  background-color: silver;
+}
+#titulo-app {
+  font-size: 30px;
+  color: green;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Al igual que anteriormente .class llamaba a la clase de html con # se llama a la id previamente asignada en html y en ella se pueden asignar propiedades */
+#imagen-de-gatos {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: brown;
+}
+
+#lista-aman {
+  font-size: 15px;
+  color: blueviolet;
+}
+
+#lista-odian {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+img[alt] {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* Busca todas las imagenes que hay en el html con contengan la etiqueta alternativa (alt) y entonces le aplica la propiedad que se le asigna, en este caso border-radius 50% */
+
+[type='radio'] {
+  margin: 25px;
+}
+
+/* Busca el atributo type="radio" y le pone un margen entre ellos de 25px */
+/* se puede poner tambien input[type='radio'] */
+
+[type='checkbox'] {
+  margin: 8px;
+}
+
+/* Busca el atributo type="radio" y le pone un margen entre ellos de 8px */
+/* se puede poner tambien input[type='checkbox'] */
+
+a[href="https://www.freecodecamp.org/espanol/"]
+{
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Busca en todos los hipervinculo que hay en html y comprueba todos los que tienen establecida la web de freecodecamp le asigna los atributos de color verde y le quita cualquier decoracion como el subrayado que traia por defecto y se pone el texto en negrita*/

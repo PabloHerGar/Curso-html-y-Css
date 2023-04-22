@@ -4,14 +4,38 @@
 
   <head>
     <title>AppDeGatos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link se utiliza para vincular el archivo html con css. El rel stylesheet sale por defecto??? -->
+    <!-- <style>
+      h2 {
+        color: blue;
+      }
+
+      h3 {
+        color: green;
+      }
+
+      p {
+        color: purple;
+      }
+    </style> Todos estos estilos serian para para ponerlos dentro del head pero se utiliza mejor con el archivo .css-->
+    <!--  Se le asigna a todos los elementos h2 -->
   </head>
 
   <!-- contiene la metadata los elementos que no vemos, tambien para personalizar el titulo de la pagina con title -->
 
   <body>
-    <h2>AppDeGatos</h2>
+    <h2 id="titulo-app">AppDeGatos</h2>
+    <!-- <h2 style="color: blue">AppDeGatos</h2> -->
 
     <!-- h1 h2 h3 h4 h5 h6 son encabezados -->
+    <!-- style se crea un estilo. En este caso el  -->
 
     <main>
       <h3>Imagenes de Gatos</h3>
@@ -37,6 +61,7 @@
         rel="noopener noreferrer"
         ><img
           src="https://bit.ly/fcc-relaxing-cat"
+          class="imagen-de-gatos"
           alt="Un lindo gato naranja recostado sobre su espalda"
       /></a>
 
@@ -49,14 +74,14 @@
       <!--En la imagen src se seleciona la ubicacion donde está. alt es el texto que sale cuando no hay conexion y no puede cargar la pagina. -->
 
       <h3>Listas de gatos</h3>
-      <div>
+      <div class="contenedor-listas">
         <!-- Es un contenedor de información para usar en css -->
 
         <p>Cosas que los gatos <em>aman</em>:</p>
 
         <!-- em se utiliza para poner en cursiva -->
 
-        <ul>
+        <ul class="lista-de-gatos">
           <li>Menta gatuna</li>
           <!-- list item -->
           <li>Apuntadores laser</li>
@@ -67,20 +92,40 @@
         <!-- ul  listas no ordenadas -->
         <!-- s palabras tachadas -->
 
-        <img src="imagenes/lasana.jpg" alt="lasaña" />
-        <p>Cosas que los gatos <strong> odian</strong>:</p>
+        <img
+          src="imagenes/lasana.jpg"
+          class="bordes-redondeados"
+          alt="lasaña"
+        />
+        <p class="lista-de-gatos">
+          Cosas que los gatos <strong> odian</strong>:
+        </p>
 
         <!-- strong es para poner algo negrita, para texto importante -->
 
-        <ol>
+        <ol class="lista-de-gatos">
           <li>Tratamientos antipulgas</li>
           <!-- list item -->
           <li>Truenos</li>
           <li>Otros gatos</li>
         </ol>
-      </div>
-      <img src="imagenes/gatos.jpg" alt="gatos" />
 
+        <ul id="lista-aman">
+          <li>github</li>
+          <!-- list item -->
+          <li>html</li>
+          <li><s>css</s></li>
+          <li>javascript</li>
+        </ul>
+
+        <ol id="lista-odian">
+          <li>servidor</li>
+          <!-- list item -->
+          <li>usuario</li>
+          <li>cliente</li>
+        </ol>
+      </div>
+      <img src="imagenes/gatos.jpg" class="imagen-de-gatos" alt="gatos" />
       <!-- ol lista ordenada -->
 
       <form action="/enviar-respuesta">
@@ -148,6 +193,7 @@
 
         <button type="submit">Enviar</button>
       </form>
+      <img id="imagen-de-gatos" src="imagenes/gatos.jpg" alt="gatos" />
 
       <!-- form es un formulario 
       input es para que el usuario introduzca algo ejemplo text texto submit boton
