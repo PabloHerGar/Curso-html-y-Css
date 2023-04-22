@@ -1,0 +1,18 @@
+img {
+  /* padding: 20px 15px 10px 5px; */
+  /* padding es la distancia entre el contenido de su elemento y su borde.
+Es lo mismo de arriba pero con más lineas
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 10px;
+  padding-bottom: 5px; */
+  margin: 25px;
+  padding: 25px;
+
+  /* background-color: yellow; */
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+}
+
+/* margen es la distancia entre el borde de un elmento y el borde de otros elementos */
