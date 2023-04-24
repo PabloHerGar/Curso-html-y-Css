@@ -1,0 +1,196 @@
+/* :root {
+  --pinguino-barriga: pink;
+} */
+
+/* Se define una variable en :root que es para todo html */
+
+body {
+  background: pink;
+}
+
+/* Como ya esta definida en root se le puede poner el fondo de todo en color blanco */
+
+.pinguino {
+  /* --pinguino-barriga: white; */
+  /* no hace falta definirla aqui si ya está definida en root */
+  --pinguino-pico: orange;
+  /* cuando en css ponemos --nombre le estamos diciendo a que --nombre es una variable de css */
+
+  --pinguino-piel: blue;
+  /* Se ha creado la variable pinguino-piel y le hemos puesto la variable var(--pinguino-piel) en todas las partes del cuerpo que queramos cambiar el color */
+
+  --pinguino-mejillas: crimson;
+
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 300px;
+  height: 300px;
+}
+
+.pinguino-superior {
+  top: 10%;
+  left: 25%;
+  background: var(--pinguino-piel);
+  width: 50%;
+  height: 45%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.pinguino-inferior {
+  top: 40%;
+  left: 23.5%;
+  background: var(--pinguino-piel);
+  width: 53%;
+  height: 45%;
+  border-radius: 70% 70% 100% 100%;
+}
+
+.mano-derecha {
+  top: 0%;
+  left: -5%;
+  background: var(--pinguino-piel);
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 120% 30%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.mano-izquierda {
+  top: 0%;
+  left: 75%;
+  background: var(--pinguino-piel);
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 30% 120%;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.mejilla-derecha {
+  top: 15%;
+  left: 35%;
+  background: white;
+  background: var(--pinguino-barriga, white);
+
+  /* Nosotros hemos definido la variable -- pinguino-barriga y al principio del codigo le hemos asignado el color blanco, existe valores de respaldo por si hay algun error en la escritura de la variable y esa parte se queda vacía, se le llaman valores de respaldo, se añaden con una coma y se pone el color por si falla */
+
+  /* En alguno navegadores como puede ser internet explorer no funcionan las variables de css, por es motivo se definen dos background, el primero blanco por si falla algun navegador y el segundo que actua de variable. Si el navegador funciona bien la variable tiene más fuerza que solo el color en este ejemplo porque está definida despues. En valor de respaldo solo actua para los navegadores que si aceptan las variable de css. */
+
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.mejilla-izquierda {
+  top: 15%;
+  left: 5%;
+  background: var(--pinguino-barriga, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.barriga {
+  top: 60%;
+  left: 2.5%;
+  background: var(--pinguino-barriga, white);
+  width: 95%;
+  height: 100%;
+  border-radius: 120% 120% 100% 100%;
+}
+
+.pie-derecho {
+  top: 85%;
+  left: 60%;
+  background: var(--pinguino-pico, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(-80deg);
+  z-index: -2222;
+}
+
+.pie-izquierdo {
+  top: 85%;
+  left: 25%;
+  background: var(--pinguino-pico, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(80deg);
+  z-index: -2222;
+}
+
+.ojo-derecho {
+  top: 45%;
+  left: 60%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.ojo-izquierdo {
+  top: 45%;
+  left: 25%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.reflejo-ojos {
+  top: 25%;
+  left: 15%;
+  background: white;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+.color-mejilla-derecha {
+  top: 65%;
+  left: 15%;
+  background: var(--pinguino-mejillas, pink);
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.color-mejilla-izquierda {
+  top: 65%;
+  left: 70%;
+  background: var(--pinguino-mejillas, pink);
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.pico-superior {
+  top: 60%;
+  left: 40%;
+  background: var(--pinguino-pico, orange);
+  width: 20%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.pico-inferior {
+  top: 65%;
+  left: 42%;
+  background: var(--pinguino-pico, orange);
+  width: 16%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+body {
+  background: #c6faf1;
+}
+
+.pinguino * {
+  position: absolute;
+}
